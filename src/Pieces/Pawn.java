@@ -4,6 +4,7 @@ import Game.Player;
 import Game.Type;
 
 public class Pawn extends Piece{
+    Type type;
     /**
      * Constructor for a Piece.
      *
@@ -13,10 +14,12 @@ public class Pawn extends Piece{
      **/
     public Pawn(int x, int y, Player player) {
         super(x, y, player);
+        type = Type.PAWN;
     }
 
     @Override
     public boolean isValidPath(int finalX, int finalY) {
+
         return false;
     }
 
@@ -27,6 +30,6 @@ public class Pawn extends Piece{
 
     @Override
     public Type getType() {
-        return null;
+        return Type.PAWN;
     }
 }
