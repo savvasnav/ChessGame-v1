@@ -1,5 +1,6 @@
 package Pieces;
 
+import GUI.ChessBoardGUI;
 import Game.Player;
 import Game.Type;
 
@@ -19,12 +20,14 @@ public class King extends Piece {
 
     @Override
     public boolean isValidPath(int finalX, int finalY) {
-
-        return false;
+        int x_diff =Math.abs(finalX - m_x);
+        int y_diff = Math.abs(finalY - m_y);
+        return (x_diff + y_diff == 1) || (x_diff + y_diff == 2);
     }
 
     @Override
     public int[][] drawPath(int startX, int startY, int finalX, int finalY) {
+
         return new int[0][];
     }
 
