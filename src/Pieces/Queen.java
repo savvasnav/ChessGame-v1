@@ -19,7 +19,9 @@ public class Queen extends Piece{
 
     @Override
     public boolean isValidPath(int finalX, int finalY) {
-        return false;
+        int x_diff = finalX - m_x;
+        int y_diff = finalY - m_y;
+        return (x_diff == y_diff)||(finalX==m_x || finalY==m_y);
     }
 
     @Override

@@ -1,6 +1,9 @@
 package Pieces;
 
+import GUI.ChessBoardGUI;
 import Game.*;
+
+
 
 public abstract class Piece {
 
@@ -15,7 +18,7 @@ public abstract class Piece {
         m_x = x;
         m_y = y;
         m_player = player;
-       // myGame.player.gameBoard.boardArray[x][y];
+
     }
 
     /**
