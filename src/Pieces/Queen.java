@@ -29,6 +29,6 @@ public class Queen extends Piece{
 
     @Override
     public Type getType() {
-        return null;
+        return Type.QUEEN;
     }
 }

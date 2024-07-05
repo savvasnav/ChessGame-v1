@@ -4,6 +4,7 @@ import Game.Player;
 import Game.Type;
 
 public class King extends Piece {
+    Type type;
     /**
      * Constructor for a Piece.
      *
@@ -13,6 +14,7 @@ public class King extends Piece {
      **/
     public King(int x, int y, Player player) {
         super(x, y, player);
+        type = Type.KING;
     }
 
     @Override

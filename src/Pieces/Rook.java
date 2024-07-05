@@ -56,6 +56,6 @@ public class Rook extends Piece {
 
     @Override
     public Type getType() {
-        return null;
+        return Type.ROOK;
     }
 }
